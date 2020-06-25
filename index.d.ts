@@ -13,7 +13,7 @@ declare namespace gulpTypedoc {
     /**
      * Specifies the output mode the project is used to be compiled with.
      */
-    mode?: "file" | "modules";
+    mode?: "file" | "modules" | "library";
 
     /**
      * Specifies the location and file name a json file describing the project is written to. When specified no
@@ -125,6 +125,8 @@ declare namespace gulpTypedoc {
     version?: boolean;
 
     logger?: Logger | "none";
+    
+    [prop:string]:any
   }
 }
 
